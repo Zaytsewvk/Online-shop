@@ -1,0 +1,117 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url("images/patt.png");
+}
+.header {
+	background-color: rgba(255,255,255,0.75);
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+.navbar {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+.container {
+	padding: 25px 15px;
+}
+.nav {
+	font: 300 21px Roboto;
+}
+.col-md-6 > ul {
+	width: 100%;
+}
+.nav > li {
+	border-right: 1px solid #2c71b8;
+	width: 25%;
+}
+.nav > li:nth-child(1) {
+	border-left: 1px solid #2c71b8;
+}
+.navbar-default .nav > li > a {
+	color: #2c71b8;
+	text-align: center;
+}
+.navbar-default .nav > li > a:hover {
+	background-color: #2c71b8;
+	color: #fff;
+}
+.form-group {
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #2c71b8;
+	position: relative;
+	width: 200px;
+	margin-right: 0;
+}
+.form-control {
+	background: transparent;
+	border: 0;
+	font: 300 21px Roboto;
+	padding-right: 35px;
+	color: #2c71b8;
+}
+.form-control::placeholder {
+	font-weight: 300;
+	color: #2c71b8;	
+}
+.navbar-form .form-control {
+	width: 200px;
+}
+.navbar-form {
+	padding-left: 0;
+	width: 215px;
+	position: relative;
+}
+.button-search {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	cursor: pointer;
+	background: #2c71b8 url("images/icon (4).png") 50% 50% no-repeat;
+}
+.shop-cart {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background: #fff url("images/icon (1).png") 50% 50% no-repeat;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	cursor: pointer;
+}
+.counter {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	background: #2c71b8;
+	color: #fff;
+	top: -10px;
+	left: -10px;
+}
+
+.breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb > li > a {
+	color: #fff;
+	font: 300 14px Roboto;
+}
+.breadcrumb > li+li:before {
+	content: ">";
+	color: #fff;
+}
+.active {
+	border-bottom: 1px dashed #fff;
+}
+.headline {
+	color: #fff;
+	margin: 0;
+	font: 700 48px Roboto;
+}
