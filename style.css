@@ -26,8 +26,28 @@ body {
 	border-right: 1px solid #2c71b8;
 	width: 25%;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background: #2c71b8;
+	color: #fff;
+}
 .nav > li:nth-child(1) {
 	border-left: 1px solid #2c71b8;
+}
+.toggle-menu {
+	background: #2c71b8;
+	border-top: 0;
+	left: 0;
+}
+.toggle-menu > li > a {
+	color: #fff;
+	font: 300 21px Roboto;
+}
+.toggle-menu > li > a {
+	padding: 7px 20px;
+}
+.toggle-menu > li > a:hover  {
+	color: #2c71b8;
+	background: #fff;
 }
 .navbar-default .nav > li > a {
 	color: #2c71b8;
@@ -83,6 +103,9 @@ body {
 	margin-right: 0;
 	cursor: pointer;
 }
+.shop-cart:hover {
+	background: #2c71b8 url("images/icon (2).png") 50% 50% no-repeat;
+}
 .counter {
 	position: absolute;
 	width: 20px;
@@ -94,6 +117,10 @@ body {
 	color: #fff;
 	top: -10px;
 	left: -10px;
+}
+.shop-cart:hover > .counter {
+	background: #fff;
+	color: #2c71b8; 
 }
 
 .breadcrumb {
