@@ -19,8 +19,11 @@ body {
 .nav {
 	font: 300 21px Roboto;
 }
-.col-md-6 > ul {
+.col-md-6 > .collapse > ul {
 	width: 100%;
+}
+.navbar-collapse {
+	padding: 0;
 }
 .nav > li {
 	border-right: 1px solid #2c71b8;
