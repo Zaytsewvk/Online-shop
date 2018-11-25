@@ -45,7 +45,7 @@ body {
 	width: 200px;
 	margin-right: 0;
 }
-.form-control {
+.form-group > .form-control {
 	background: transparent;
 	border: 0;
 	font: 300 21px Roboto;
@@ -114,4 +114,129 @@ body {
 	color: #fff;
 	margin: 0;
 	font: 700 48px Roboto;
+}
+button.dropdown-toggle, div > .dropdown-menu {
+	width: 100%;
+	background: #2c71b8;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 0;
+	text-align: left;
+	margin-top: 14px;
+}
+button.btn:hover, .btn:focus, div > .dropdown-menu > li > a {
+	color: #fff;
+}
+div > .dropdown-menu > li > a:hover {
+	color: #2c71b8;
+	background-color: #fff;
+}
+div > .dropdown-menu {
+	margin: 0;
+	padding: 0;
+}
+button.btn {
+	position: relative;
+}
+button + .caret {
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	color: #fff;
+}
+.product {
+	border: 1px solid #fff;
+	background-color: rgba(44, 113, 184, 0.75);
+	margin: 30px 0;
+}
+.product:hover {
+	box-shadow: 0 0 30px #235a93;
+}
+.product-img {
+	background: rgba(255,255,255,0.75);
+	text-align: center;
+	padding: 45px 0;
+	position: relative;
+}
+.product-img > img {
+	height: 90px;
+	max-width: 100%;
+}
+.full-screen {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url("images/icon (8).png") 50% 50% no-repeat;
+	top: 10px;
+	right: 10px;
+	border: 1px solid #2c71b8;
+	cursor: pointer;
+}
+.full-screen:hover {
+	background: #2c71b8 url("images/icon (6).png") 50% 50% no-repeat;
+}
+.like {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url("images/icon (5).png") 50% 50% no-repeat;
+	top: 50px;
+	right: 10px;
+	border: 1px solid #2c71b8;
+	cursor: pointer;
+}
+.like:hover {
+	background: #2c71b8 url("images/icon (7).png") 50% 50% no-repeat;
+}
+.product-title > a {
+	color: #fff;
+	font: 700 30px Roboto;
+}
+.product-title, .product-desc, .dl-horizontal, .product-price {
+	padding: 5px 20px;
+	color: #fff;
+}
+.dl-horizontal dt {
+	width: auto;
+	margin-right: 5px;
+	font: 700 21px Roboto;
+}
+.dl-horizontal dd {
+	margin-left: 0;
+}
+.product-desc, .dl-horizontal dd {
+	font: 300 21px Roboto;
+}
+.product-price {
+	text-align: center;
+	font: 700 48px Roboto;
+}
+.more-details {
+	text-align: center;
+}
+.btn-details {
+	border-radius: 0;
+	border: 1px solid #fff;
+	font: 700 21px Roboto;
+	background: #2c71b8;
+	color: #fff;
+	width: 80%;
+}
+.add-to-cart {
+	text-align: center;
+}
+.btn-add {
+	border-radius: 0;
+	border: 1px solid #fff;
+	background: rgba(86, 141, 198, 1);
+	color: #fff;
+	font: 700 21px Roboto;
+	width: 80%;
+	margin: 15px 0;
+}
+.basket {
+	background: url("images/icon (2).png") 50% 50% no-repeat;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
 }
