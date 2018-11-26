@@ -189,8 +189,10 @@ button + .caret {
 	position: relative;
 }
 .product-img > img {
+	position: relative;
 	height: 90px;
 	max-width: 100%;
+	z-index: 1;
 }
 .full-screen {
 	position: absolute;
@@ -201,6 +203,7 @@ button + .caret {
 	right: 10px;
 	border: 1px solid #2c71b8;
 	cursor: pointer;
+	z-index: 1;
 }
 .full-screen:hover {
 	background: #2c71b8 url("images/icon (6).png") 50% 50% no-repeat;
@@ -214,6 +217,7 @@ button + .caret {
 	right: 10px;
 	border: 1px solid #2c71b8;
 	cursor: pointer;
+	z-index: 1;
 }
 .like:hover {
 	background: #2c71b8 url("images/icon (7).png") 50% 50% no-repeat;
@@ -273,4 +277,24 @@ button + .caret {
 .text-load {
 	color: #fff;
 	font: 300 36px Roboto;
+}
+.line1 {
+	position: absolute;
+	height: 0;
+	width: 315px;
+	border-top: 1px solid #fff;
+	top: 89px;
+	left: -28px;
+	transform: rotate(34deg);
+	z-index: 0;
+}
+.line2 {
+	position: absolute;
+	height: 0;
+	width: 315px;
+	border-top: 1px solid #fff;
+	top: 89px;
+	left: -28px;
+	transform: rotate(-34deg);
+	z-index: 0;
 }
