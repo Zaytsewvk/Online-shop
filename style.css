@@ -270,3 +270,7 @@ button + .caret {
 	height: 15px;
 	display: inline-block;
 }
+.text-load {
+	color: #fff;
+	font: 300 36px Roboto;
+}
