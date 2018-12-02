@@ -13,7 +13,7 @@ body {
 	box-shadow: none;
 	margin-bottom: 0;
 }
-.container {
+header > .container, footer > .container {
 	padding: 25px 15px;
 }
 .nav {
@@ -267,11 +267,11 @@ button + .caret {
 	color: #fff;
 	width: 80%;
 }
-.btn-details:hover {
+.btn-details:hover, .btn-filter-submit:hover {
 	background: #235a93;
 	box-shadow: 0 0 8px #fff inset;
 }
-.product > .more-details > button.btn:hover, .product > .add-to-cart > .btn-add:hover {
+.product > .more-details > button.btn:hover, .product > .add-to-cart > .btn-add:hover, .btn-filter-submit:hover {
 	-webkit-transition: 0.25s ease-in-out;
     -moz-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
@@ -322,4 +322,56 @@ button + .caret {
 	left: -28px;
 	transform: rotate(-34deg);
 	z-index: 0;
+}
+.filter {
+	background: rgba(255,255,255,0.2);
+	border-right: 1px solid #fff;
+	padding: 15px 15px 15px 15px;
+	color: #fff;
+}
+.filter-dt, .filter-c, .filter-ram {
+	font: 700 21px "Roboto";
+}
+.checkbox > label, .show-more {
+	font: 300 21px "Roboto";
+	display: block;
+	margin: 5px 0;
+}
+main .col-md-9 {
+	padding: 15px 15px;
+}
+.show-more, .filter-submit {
+	text-align: center;
+}
+.show-more > a {
+	color: #fff;
+}
+.btn-filter-submit {
+	background: #2c71b8;
+	border: 1px solid #fff;
+	border-radius: 1px;
+	width: 90%;
+	font: 700 21px "Roboto";
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.color-checkbox, .device-checkbox {
+	margin-bottom: 30px;
+}
+.show-more {
+	margin-bottom: 15px;
+}
+.checkbox > label > input {
+	margin: 7px 0;
+	background: transparent;
+	border: 1px solid #fff;
+}
+footer {
+	background: rgba(255,255,255,0.7);
+	border: none;
+}
+footer > .container > .row > .col-md-12 > p {
+	color: #2c71b8;
+	text-align: center;
+	font: 300 21px Roboto;
 }
