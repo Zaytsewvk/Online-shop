@@ -108,6 +108,10 @@ body {
 }
 .shop-cart:hover {
 	background: #2c71b8 url("images/icon (2).png") 50% 50% no-repeat;
+	-webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 .counter {
 	position: absolute;
@@ -124,6 +128,10 @@ body {
 .shop-cart:hover > .counter {
 	background: #fff;
 	color: #2c71b8; 
+	-webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 .breadcrumb {
@@ -139,6 +147,9 @@ body {
 }
 .active {
 	border-bottom: 1px dashed #fff;
+}
+.active:hover {
+	border-bottom: 0;
 }
 .headline {
 	color: #fff;
@@ -179,9 +190,9 @@ button + .caret {
 	background-color: rgba(44, 113, 184, 0.75);
 	margin: 30px 0;
 }
-.product:hover {
+/*.product:hover {
 	box-shadow: 0 0 30px #235a93;
-}
+}*/
 .product-img {
 	background: rgba(255,255,255,0.75);
 	text-align: center;
@@ -256,6 +267,16 @@ button + .caret {
 	color: #fff;
 	width: 80%;
 }
+.btn-details:hover {
+	background: #235a93;
+	box-shadow: 0 0 8px #fff inset;
+}
+.product > .more-details > button.btn:hover, .product > .add-to-cart > .btn-add:hover {
+	-webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
 .add-to-cart {
 	text-align: center;
 }
@@ -267,6 +288,10 @@ button + .caret {
 	font: 700 21px Roboto;
 	width: 80%;
 	margin: 15px 0;
+}
+.btn-add:hover {
+	background: #235a93;
+	box-shadow: 0 0 8px #fff inset;
 }
 .basket {
 	background: url("images/icon (2).png") 50% 50% no-repeat;
