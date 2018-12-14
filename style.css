@@ -395,93 +395,66 @@ footer > .container > .row > .col-md-12 > p {
 	height: 400px;
 	position: relative;
 }
-.container-fluid {
+.slider-block {
 	background: rgba(0,0,0,0.2);
 	border: none;
 	border-bottom: 1px solid #fff;
 }
-.slider > p {
-	font: 100 100px Roboto;
-	color: #fff;
+.slider div {
 	text-align: center;
-	line-height: 300px;
-	margin: 0;
-}
-.left-switch > .top {
-	height: 0;
-	width: 35px;
-	border-bottom: 1px solid #fff;
-	transform: rotate(-45deg);
-	position: absolute;
-	left: 0;
-	top: 11px;
-	z-index: 10;
-}
-.left-switch > .bottom {
-	height: 0;
-	width: 35px;
-	border-bottom: 1px solid #fff;
-	transform: rotate(45deg);
-	position: absolute;
-	left: 0;
-	top: 35px;
-	z-index: 10;
-}
-.left-switch {
-	cursor: pointer;
-	width: 35px;
-	height: 50px;
+	color: white;
+	padding: 50px 0;
 	position: relative;
-	top: 173px;
+	font: 300 75px Roboto
+}
+.like-toggle {
+	background-color: red;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+.slick-prev {
 	left: 0;
+	transform: scale(2, 5);
 }
-.right-switch > .top {
-	width: 35px;
-	border-bottom: 1px solid #fff;
-	transform: rotate(45deg);
-	position: absolute;
+.slick-next {
 	right: 0;
-	top: 11px;
-	z-index: 10;
+	transform: scale(2, 5);
 }
-.right-switch > .bottom {
-	width: 35px;
-	border-bottom: 1px solid #fff;
-	transform: rotate(-45deg);
-	position: absolute;
-	right: 0;
-	top: 35px;
-	z-index: 10;
+.slick-prev:before {
+	content: "<";
 }
-.right-switch {
-	cursor: pointer;
-	width: 35px;
-	height: 50px;
-	position: absolute;
-	top: 173px;
-	right: 0;
+.slick-next:before {
+	content: ">";
 }
-.slider-paginator {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	text-align: center;
+.slick-prev:before, .slick-next:before {
+	line-height: 0;
 }
-.slider-paginator > ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.slick-dots {
+	bottom: 10px;
 }
-.slider-paginator-li {
-	display: inline-block;
+.slick-dots li button {
 	width: 10px;
 	height: 10px;
-	border: 1px solid #fff;
-	margin: 0 10px;
-	cursor: pointer;
 }
-.icon {
+.slick-dots li button:before {
+	content: "";
+	color: transparent;
+	border: 1px solid #fff;
 	width: 10px;
 	height: 10px;
-	border: 1px solid #fff;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+	background-color: #fff;
+}
+.quantity-input {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.quantity-input > input {
+	text-align: center;
+}
+.decrement-button, .increment-button {
+	background: #fff;
+	border: 0;
 }
