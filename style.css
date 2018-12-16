@@ -303,26 +303,6 @@ button + .caret {
 	color: #fff;
 	font: 300 36px Roboto;
 }
-.line1 {
-	position: absolute;
-	height: 0;
-	width: 315px;
-	border-top: 1px solid #fff;
-	top: 89px;
-	left: -28px;
-	transform: rotate(34deg);
-	z-index: 0;
-}
-.line2 {
-	position: absolute;
-	height: 0;
-	width: 315px;
-	border-top: 1px solid #fff;
-	top: 89px;
-	left: -28px;
-	transform: rotate(-34deg);
-	z-index: 0;
-}
 .filter {
 	background: rgba(255,255,255,0.2);
 	border-right: 1px solid #fff;
@@ -449,12 +429,40 @@ footer > .container > .row > .col-md-12 > p {
 }
 .quantity-input {
 	text-align: center;
-	margin-bottom: 10px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 80%;
 }
 .quantity-input > input {
 	text-align: center;
+	width: 100%;
+	font: 400 18px Roboto;
+	padding: 3px 25px;
 }
 .decrement-button, .increment-button {
 	background: #fff;
 	border: 0;
+	width: 20px;
+	font-weight: 500;
+}
+.decrement-button {
+	position: absolute;
+	z-index: 2;
+	height: 90%;
+	background: #fff;
+	border-right: 1px solid #ccc;
+	top: 1.5px;
+	left: 2px;
+	color: red;
+}
+.increment-button {
+	position: absolute;
+	z-index: 2;
+	top: 1.5px;
+	right: 2px;
+	height: 90%;
+	border-left: 1px solid #ccc;
+	background: #fff;
+	color: #008000;
 }
