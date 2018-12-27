@@ -17,7 +17,7 @@ for(i = 0; i < addToCartButtons.length; i++) {
 
 	//Slider
 $('.slider').slick({
-	// autoplay: true,
+	autoplay: true,
 	aitoPlaySpeed: 2000,
 	dots: true,
 })

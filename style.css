@@ -75,12 +75,17 @@ header > .container, footer > .container {
 	padding-right: 35px;
 	color: #2c71b8;
 }
+.navbar-form {
+	margin: 8px 0;
+	border: 0;
+}
 .form-control::placeholder {
 	font-weight: 300;
 	color: #2c71b8;	
 }
 .navbar-form .form-control {
 	width: 200px;
+	margin: 0;
 }
 .navbar-form {
 	padding-left: 0;
@@ -218,6 +223,12 @@ button + .caret {
 }
 .full-screen:hover {
 	background: #2c71b8 url("images/icon (6).png") 50% 50% no-repeat;
+	transition: 0.5s;
+}
+.full-screen > a {
+	height: 30px;
+	width: 30px;
+	display: block;
 }
 .like {
 	position: absolute;
@@ -232,6 +243,7 @@ button + .caret {
 }
 .like:hover {
 	background: #2c71b8 url("images/icon (7).png") 50% 50% no-repeat;
+	transition: 0.5s;
 }
 .product-title > a {
 	color: #fff;
@@ -396,6 +408,7 @@ footer > .container > .row > .col-md-12 > p {
 .slick-prev {
 	left: 0;
 	transform: scale(2, 5);
+	z-index: 10;
 }
 .slick-next {
 	right: 0;
@@ -426,6 +439,9 @@ footer > .container > .row > .col-md-12 > p {
 }
 .slick-dots li button:hover, .slick-dots li button:focus {
 	background-color: #fff;
+}
+.slick-active > button[tabindex="0"] {
+	background-color: #ffffff;
 }
 .quantity-input {
 	text-align: center;
